@@ -10,9 +10,9 @@ This is done by placing an inverse gamma prior on the coefficients <img src="htt
 ## Results
 We consider daily Apple stock data (AAPL) and consider the log returns. Below we plot the resultant estimate of the
 volatility function along with the 95% confidence band in blue. Superimposed in orange is the kernel estimate using the
-boxcar estimate <img src="https://render.githubusercontent.com/render/math?math=K_\epsilon(x, x_i)=I_\{|x-x_i|<\epsilon\}(x)">, so that the frequentist estimator is given by
+boxcar estimate <img src="https://render.githubusercontent.com/render/math?math=K_\epsilon(x, x_i)=I_{|x-x_i|<\epsilon}(x)">, so that the frequentist estimator is given by
 
-<img src="https://render.githubusercontent.com/render/math?math=\sigma^2(t)=\sum_{i=1}^nK(t, x_i)Y_i^2,">
+<img src="https://render.githubusercontent.com/render/math?math=\sigma^2(t)=\sum_{i=1}^nK\epsilon(t, x_i)Y_i^2,">
 
 where <img src="https://render.githubusercontent.com/render/math?math=Y_i"> are the log return increments.
 ![vol](https://github.com/DylanZammit/BinnedVolatility/blob/master/images/AAPL_volatility.png)
